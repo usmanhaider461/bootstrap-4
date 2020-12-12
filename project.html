@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Bootstrap 4</title>
+    <style>
+        #header {
+            background: rgba(255, 255, 255, 0.418) url(/img/bg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar bg-info navbar-dark">
+        <div class="container">
 
-
+            <a href="#" class="navbar-brand"><i class="fa fa-binoculars mr-2" aria-hidden="true"></i> Pattern</a>
+        </div>
+    </nav>
+    <section id="header" class="jumbotron text-center">
+        <h1 class="display-3">PATTERN</h1>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos!</p>
+        <button class="btn btn-primary">Do Something</button>
+        <button class="btn btn-success">Another Thing</button>
+    </section>
     <!-- Script -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
 </body>
