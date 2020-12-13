@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-md py-0 fixed-top" id="mainNavbar">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top" id="mainNavbar">
         <a href="#" class="navbar-brand">CANDY</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <section class="container-fluid px-0">
+    <section class="container-fluid">
         <div class="row align-items-center mt-5">
             <div class="col-lg-6 px-0">
                 <div id="heading-group" class="text-center text-white d-none d-lg-block">
@@ -52,22 +52,84 @@
     </section>
 
     <section class="container-fluid px-0">
-        <div class="row">
-            <div class="col-md-6 px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 px-0 order-2 order-md-1">
                 <img class="img-fluid" src="img/10.jpg" alt="">
             </div>
-            <div class="col-md-6 px-0">
-
+            <div class="col-md-6 px-0 text-center pt-5 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb">
+                        <h2 class="pb-3">MUSEUM OF CANDY</h2>
+                        <i class="fas fa-coins d-none d-lg-inline pb-3"></i>
+                        <p class="lead pt-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quo nesciunt temporibus
+                            repellat
+                            explicabo! Ea corrupti et tempora dolorum unde enim aliquid sequi. Aliquam, illo sed eaque
+                            voluptates accusamus ullam.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 px-0 text-center pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb">
+                        <h2 class="pb-3">MUSEUM OF CANDY</h2>
+                        <i class="fas fa-coins d-none d-lg-inline pb-3"></i>
+                        <p class="lead pt-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quo nesciunt temporibus
+                            repellat
+                            explicabo! Ea corrupti et tempora dolorum unde enim aliquid sequi. Aliquam, illo sed eaque
+                            voluptates accusamus ullam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 px-0">
+                <img class="img-fluid" src="img/11.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 px-0 order-2 order-md-1">
+                <img class="img-fluid" src="img/7.jpg" alt="">
+            </div>
+            <div class="col-md-6 px-0 text-center pt-5 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb">
+                        <h2 class="pb-3">MUSEUM OF CANDY</h2>
+                        <i class="fas fa-coins d-none d-lg-inline pb-3"></i>
+                        <p class="lead pt-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quo nesciunt temporibus
+                            repellat
+                            explicabo! Ea corrupti et tempora dolorum unde enim aliquid sequi. Aliquam, illo sed eaque
+                            voluptates accusamus ullam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Scripts -->
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            })
+        })
+    </script>
 </body>
 
 </html>
